@@ -16,9 +16,10 @@ body {
 }
 /* header */
 header {
-  margin-top: 100px;
-  height: 300px;
+  margin-top: 50px;
+  height: 400px;
 }
+
 .box {
   margin: 0 auto;
   width: 200px;
@@ -31,27 +32,6 @@ header {
   height: 115%;
   object-fit: cover;
 }
-.logo {
-  margin-top: 50px;
-  margin: 0 auto;
-  width: 223px;
-  height: 100px;
-  /* 		border-radius: 70%; */
-  overflow: hidden;
-}
-.logoImg {
-  width: 50px;
-  height: 50px;
-  object-fit: cover;
-  padding: 10px;
-}
-
-/* header > h1
-	{
-		text-align: center;
-		margin-top: 30px;
-		font-size: 3em;
-	} */
 
 .typing-txt {
   display: none;
@@ -59,10 +39,24 @@ header {
 .typing-txt > ul {
   list-style: none;
 }
-/* .typing ul li
-	{
-		display: block;
-	} */
+.typing {
+  height: 100px;
+  text-align: center;
+  margin: 0 auto;
+  margin-top: 10px;
+}
+.typing ul li {
+  display: block;
+}
+.typing > ul > li:nth-child(1) {
+  font-size: 2em;
+  font-weight: bold;
+  color: rgb(81, 81, 82);
+}
+.typing > ul > li:nth-child(2) {
+  font-size: 1.2em;
+  color: rgb(125, 125, 128);
+}
 .typing ul li.on {
   display: inline-block;
   animation-name: cursor;
@@ -81,6 +75,39 @@ header {
   }
 }
 
+.logo {
+  margin-top: 50px;
+  margin: 0 auto;
+  width: 223px;
+  height: 75px;
+  overflow: hidden;
+}
+.logoImg {
+  width: 50px;
+  height: 50px;
+  object-fit: cover;
+  padding: 10px;
+}
+.logoImg:hover {
+  opacity: 0.5;
+}
+
+/* navigation */
+nav ul {
+  text-align: center;
+}
+nav ul li {
+  display: inline-block;
+  font-size: 15px;
+  padding: 8px 30px;
+  color: rgb(125, 125, 128);
+  border: rgb(125, 125, 128) solid 1px;
+  margin: 15px 15px;
+  border-radius: 10px;
+}
+nav ul li:hover {
+  opacity: 0.5;
+}
 /* modal */
 .modal {
   display: none; /* Hidden by default */
