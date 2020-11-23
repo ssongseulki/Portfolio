@@ -4,6 +4,11 @@
     <meta charset="UTF-8" />
     <title>Portfolio of Song Seul-ki</title>
     <link rel="stylesheet" type="text/css" href="Index.css" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR&display=swap"
+      rel="stylesheet"
+    />
     <script src="https://code.jquery.com/jquery-3.4.1.slim.js"></script>
   </head>
   <body>
@@ -28,7 +33,6 @@
         </ul>
       </div>
 
-      <!-- 		<h1>Song Seul-ki</h1><br> -->
       <div class="logo">
         <a href="https://github.com/ssongseulki"
           ><img
@@ -59,55 +63,147 @@
     </nav>
     <section>
       <article id="about">
-        <h2>About Me</h2>
-        <p>
-          변화를 두려워하지 않고 끊임없이 도전하는 신입 개발자입니다.<br />
-          뒤늦게 시작한 프로그래밍이고 뜻대로 되지 않아 낙심할 때도 있었지만
-          "어떻게 하는 걸까?"라고 상상만 했던 기능들이 하나씩 가능해질 때마다
-          뿌듯함과 벅차오름이 밤을 새도 피곤하지 않을 만큼 개발자로서 욕심을
-          내게 하였습니다.<br />
-          <br />
-          세상을 주도하고 빠르게 변하는 IT 트렌드에 맞춰 달라지는 기술에 대해
-          게으르지 않고 공부하며 스스로를 발전시키겠습니다.<br />
-          전 세계의 현재와 미래의 중심에는 개발자들이 있다고 생각합니다.<br />
-          아직은 개발자라고 말할 수 없는 작은 신입이지만 부족한 만큼 끊임없이
-          공부하고 노력하여 진정한 개발자로서 미래의 중심에 함께 서고
-          싶습니다.<br />
-          "열심히"를 뛰어넘어 "잘" 하는 개발자가 되겠습니다.<br />
-        </p>
+        <div class="about-item1">
+          <h2>
+            About <br />
+            Me
+          </h2>
+        </div>
+        <div class="about-item2">
+          <p>
+            변화를 두려워하지 않고 끊임없이 도전하는 신입 개발자입니다.<br />
+            뒤늦게 시작한 프로그래밍이고 뜻대로 되지 않아 낙심할 때도 있었지만
+            "어떻게 하는 걸까?"라고 상상만 했던 기능들이 하나씩 가능해질 때마다
+            뿌듯함과 벅차오름이 밤을 새도 피곤하지 않을 만큼 개발자로서 욕심을
+            내게 하였습니다.<br />
+            <br />
+            세상을 주도하고 빠르게 변하는 IT 트렌드에 맞춰 달라지는 기술에 대해
+            게으르지 않고 공부하며 스스로를 발전시키겠습니다.<br />
+            전 세계의 현재와 미래의 중심에는 개발자들이 있다고 생각합니다.<br />
+            아직은 개발자라고 말할 수 없는 작은 신입이지만 부족한 만큼 끊임없이
+            공부하고 노력하여 진정한 개발자로서 미래의 중심에 함께 서고
+            싶습니다.<br />
+            "열심히"를 뛰어넘어 "잘" 하는 개발자가 되겠습니다.<br />
+          </p>
+        </div>
       </article>
 
       <article id="project">
         <h2>Project</h2>
-        <a href="#" id="myBtn">
-          <tr>
-            <td>
-              <div class="thumnail">
-                <img alt="사진을 찾을 수 없습니다." src=" " />
+        <!-- 첫번째 Project -->
+        <div class="project-container">
+          <div class="project-item">
+            <div class="project-thumnail">
+              <ul>
+                <li>
+                  <a href="#" class="myBtn">
+                    <img
+                      alt="사진을 찾을 수 없습니다."
+                      src="IMG/test1.png"
+                    /><br />
+                    <p2>WeddingBook</p2><br />
+                    <p>프로젝트 입니다.</p>
+                  </a>
+                </li>
+              </ul>
+            </div>
+            <div class="modal">
+              <div class="modal-content">
+                <span class="close">&times;</span>
+                <p3>WeddingBook</p3><br />
+                <a href="">Project Page</a>
+                <a href="">Project Repo</a>
+                <tr>
+                  <td>
+                    <img
+                      class="inner_img"
+                      alt="사진을 찾을 수 없습니다."
+                      src="IMG/test1.png"
+                    />
+                  </td>
+                  <td>
+                    <p>설명</p>
+                  </td>
+                </tr>
               </div>
-            </td>
-            <td>
-              <p2>WeddingBook</p2>
-              <p>.....</p>
-            </td>
-          </tr>
-        </a>
-        <div id="myModal" class="modal">
-          <div class="modal-content">
-            <span class="close">&times;</span>
-            <p3>WeddingBook</p3><br />
-            <a href="">Project Page</a>
-            <a href="">Project Repo</a>
-            <tr>
-              <td>
-                <div class="inner_img">
-                  <img alt="사진을 찾을 수 없습니다." src=" " />
-                </div>
-              </td>
-              <td>
-                <p>설명</p>
-              </td>
-            </tr>
+            </div>
+          </div>
+
+          <!-- 두번째 Project -->
+          <div class="project-item">
+            <div class="project-thumnail">
+              <ul>
+                <li>
+                  <a href="#" class="myBtn">
+                    <img
+                      alt="사진을 찾을 수 없습니다."
+                      src="IMG/test2.png"
+                    /><br />
+                    <p2>Project2</p2><br />
+                    <p>프로젝트 입니다.</p>
+                    <br />
+                  </a>
+                </li>
+              </ul>
+            </div>
+            <div class="modal">
+              <div class="modal-content">
+                <span class="close">&times;</span>
+                <p3>Project2</p3><br />
+                <a href="">Project Page</a>
+                <a href="">Project Repo</a>
+                <tr>
+                  <td>
+                    <img
+                      class="inner_img"
+                      alt="사진을 찾을 수 없습니다."
+                      src="IMG/test2.png"
+                    />
+                  </td>
+                  <td>
+                    <p>설명</p>
+                  </td>
+                </tr>
+              </div>
+            </div>
+          </div>
+
+          <!-- 세번째 Project -->
+          <div class="project-item">
+            <div class="project-thumnail">
+              <ul>
+                <li>
+                  <a href="#" class="myBtn">
+                    <img
+                      alt="사진을 찾을 수 없습니다."
+                      src="IMG/test3.png"
+                    /><br />
+                    <p2>Project3</p2><br />
+                    <p>프로젝트 입니다.</p>
+                  </a>
+                </li>
+              </ul>
+            </div>
+            <div class="modal">
+              <div class="modal-content">
+                <span class="close">&times;</span>
+                <p3>Project3</p3><br />
+                <a href="">Project Page</a>
+                <a href="">Project Repo</a>
+                <tr>
+                  <td>
+                    <img
+                      class="inner_img"
+                      alt="사진을 찾을 수 없습니다."
+                      src="IMG/test3.png"
+                    />
+                  </td>
+                  <td>
+                    <p>설명</p>
+                  </td>
+                </tr>
+              </div>
+            </div>
           </div>
         </div>
       </article>
@@ -217,20 +313,33 @@
       }
 
       /* modal */
-      var modal = document.getElementById("myModal");
-      var btn = document.getElementById("myBtn");
-      var span = document.getElementsByClassName("close")[0];
+      var modal = document.getElementsByClassName("modal");
+      var btn = document.getElementsByClassName("myBtn");
+      var span = document.getElementsByClassName("close");
+      var funcs = [];
 
-      btn.onclick = function () {
-        modal.style.display = "block";
-      };
-      span.onclick = function () {
-        modal.style.display = "none";
-      };
+      function Modal(num) {
+        return function () {
+          btn[num].onclick = function () {
+            modal[num].style.display = "block";
+            console.log[num];
+          };
+
+          span[num].onclick = function () {
+            modal[num].style.display = "none";
+          };
+        };
+      }
+
+      for (var i = 0; i < btn.length; i++) {
+        funcs[i] = Modal(i);
+      }
+      for (var j = 0; j < btn.length; j++) {
+        funcs[j]();
+      }
       window.onclick = function (event) {
-        s;
-        if (event.target == modal) {
-          modal.style.display = "none";
+        if (event.target.className == "modal") {
+          event.target.style.display = "none";
         }
       };
     </script>
