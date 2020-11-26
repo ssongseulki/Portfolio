@@ -154,7 +154,7 @@ nav ul li:hover {
 }
 .project-thumnail {
   width: 350px;
-  height: 350px;
+  height: 400px;
   box-shadow: 0px 4px 6px 0px #9f9f9f;
   text-align: center;
 }
@@ -162,11 +162,20 @@ nav ul li:hover {
   width: 280px;
   height: 280px;
   margin: 10px 0 5px 0;
+  box-shadow: 0px 4px 6px 0px #9f9f9f;
 }
 .project-thumnail:hover {
   opacity: 0.8;
 }
-/* modal */
+.myBtn h2 {
+  color: #757373;
+  font-weight: bold;
+}
+.myBtn p {
+  color: #9c9b9b;
+}
+
+/* Project-modal */
 .modal {
   display: none; /* Hidden by default */
   position: fixed; /* Stay in place */
@@ -178,13 +187,15 @@ nav ul li:hover {
   overflow: auto; /* Enable scroll if needed */
   background-color: rgb(0, 0, 0); /* Fallback color */
   background-color: rgba(0, 0, 0, 0.4); /* Black w/ opacity */
+  text-align: center;
 }
 .modal-content {
   background-color: #fefefe;
   margin: 15% auto; /* 15% from the top and centered */
   padding: 20px;
-  border: 1px solid #888;
-  width: 50%; /* Could be more or less, depending on screen size */
+  border: 1px solid rgb(165, 163, 163);
+  width: 40%; /* Could be more or less, depending on screen size */
+  border-radius: 1.2%;
 }
 .close {
   color: #aaa;
@@ -197,4 +208,65 @@ nav ul li:hover {
   color: black;
   text-decoration: none;
   cursor: pointer;
+}
+.modal-content h2 {
+  color: #666565;
+  margin-top: 20px;
+}
+.modal-content > p {
+  display: inline-block;
+  font-size: 15px;
+  padding: 8px 30px;
+  color: rgb(125, 125, 128);
+  border: rgb(125, 125, 128) solid 1px;
+  margin: 15px 15px 30px 15px;
+  border-radius: 10px;
+}
+.modal-content > p:hover {
+  opacity: 0.5;
+}
+.modal-content img {
+  width: 400px;
+  height: 400px;
+  box-shadow: 2px 8px 10px 2px #9f9f9f;
+}
+.modal-content li > p {
+  margin-top: 20px;
+}
+
+/* Skill */
+#skill > h2 {
+  font-size: 2.2em;
+  color: #535353;
+}
+.skill-container {
+  margin-top: 70px;
+  height: 1200px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+.skill-img {
+  flex-basis: 30%;
+  width: 150px;
+  height: 150px;
+  object-fit: cover;
+  align-self: center;
+}
+.skill-p {
+  flex-basis: 70%;
+  color: #646363;
+  align-self: center;
+}
+.skill-p:first-line {
+  font-weight: bold;
+  font-size: 1.4;
+}
+footer {
+  margin-top: 70px;
+  padding-top: 50px;
+  border-top: rgb(125, 125, 128) solid 1px;
+  height: 100px;
+  text-align: center;
+  color: rgb(125, 125, 128);
 }
