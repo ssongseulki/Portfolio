@@ -1,0 +1,14 @@
+@media screen and (max-width: 768px) {
+  .project-container {
+    flex-direction: column;
+  }
+  .project-item {
+    margin-top: 20px;
+  }
+}
+
+@media screen and (min-width: 769px) {
+  .project-container {
+    flex-direction: row;
+  }
+}

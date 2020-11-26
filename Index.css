@@ -139,56 +139,50 @@ nav ul li:hover {
 
 /* About Me */
 #about {
-  margin-top: 70px;
-  height: 80vh;
+  margin-top: 100px;
   display: flex;
   flex-direction: row;
   align-items: center;
-  justify-content: space-between;
 }
 .about-item1 {
-  flex-basis: 20%;
   font-size: 2vh;
   color: #535353;
-  flex-grow: 1;
-  flex-shrink: 1;
 }
 .about-item2 {
-  flex-basis: 80%;
+  margin-left: 5vw;
   color: #646363;
-  flex-grow: 2;
-  flex-shrink: 2;
   font-size: 2vh;
 }
 
 /* Project */
 #project {
-  margin-top: 100px;
-  height: 80vh;
+  margin-top: 150px;
 }
 #project > h2 {
   font-size: 3vh;
   color: #535353;
 }
 .project-container {
+  margin-top: 40px;
+  display: flex;
+}
+/* .project-container {
   margin-top: 70px;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   align-items: flex-start;
   height: 100%;
-}
-.project-item {
-  flex-basis: auto;
-  flex-wrap: wrap;
-}
+} */
 .project-thumnail {
-  /* width: 350px;
-  height: 400px; */
-  width: 90%;
-  height: 100%;
   box-shadow: 0px 4px 6px 0px #9f9f9f;
   text-align: center;
+}
+.project-item {
+  margin-right: 10px;
+}
+.project-item:last-child {
+  margin-right: 0;
 }
 .project-thumnail img {
   /* width: 280px;
@@ -275,16 +269,17 @@ nav ul li:hover {
 }
 
 /* Skill */
+#skill {
+  margin-top: 150px;
+}
 #skill > h2 {
   font-size: 3vh;
   color: #535353;
 }
 .skill-container {
-  margin-top: 20px;
-  height: 100vh;
   display: flex;
-  flex-direction: row;
   flex-wrap: wrap;
+  margin-top: 30px;
 }
 .skill-img {
   flex-basis: 30%;
@@ -292,8 +287,10 @@ nav ul li:hover {
   height: 15vh;
   object-fit: cover;
   align-self: center;
+  margin: 20px 0 20px 0;
 }
 .skill-p {
+  margin: 20px 0 20px 0;
   flex-basis: 70%;
   color: #646363;
   align-self: center;
@@ -305,9 +302,8 @@ nav ul li:hover {
 }
 footer {
   margin-top: 70px;
-  padding-top: 50px;
+  padding: 50px 0;
   border-top: rgb(125, 125, 128) solid 1px;
-  height: 100px;
   text-align: center;
   color: rgb(125, 125, 128);
   font-size: 1.5vw;
