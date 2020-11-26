@@ -140,7 +140,7 @@ nav ul li:hover {
 /* About Me */
 #about {
   margin-top: 70px;
-  height: 60vh;
+  height: 80vh;
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -270,6 +270,8 @@ nav ul li:hover {
 }
 .modal-content li > p {
   margin-top: 20px;
+  color: rgb(125, 125, 128);
+  font-size: 1.8vh;
 }
 
 /* Skill */
@@ -299,7 +301,7 @@ nav ul li:hover {
 }
 .skill-p:first-line {
   font-weight: bold;
-  font-size: 2.3vh;
+  font-size: 2vh;
 }
 footer {
   margin-top: 70px;
@@ -308,4 +310,5 @@ footer {
   height: 100px;
   text-align: center;
   color: rgb(125, 125, 128);
+  font-size: 1.5vw;
 }
