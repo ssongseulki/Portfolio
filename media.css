@@ -5,10 +5,25 @@
   .project-item {
     margin-top: 20px;
   }
+  .project-item:first-child {
+    margin-top: 0;
+  }
+  .modal-content {
+    width: 60%;
+  }
 }
 
 @media screen and (min-width: 769px) {
   .project-container {
     flex-direction: row;
+  }
+  .project-item {
+    margin-right: 10px;
+  }
+  .project-item:last-child {
+    margin-right: 0;
+  }
+  .modal-content {
+    width: 40%;
   }
 }
