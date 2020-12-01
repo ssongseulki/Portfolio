@@ -269,7 +269,7 @@ nav ul li:hover {
 .skill-img {
   flex-basis: 30%;
   width: 10vw;
-  height: 15vh;
+  height: 17vh;
   object-fit: cover;
   align-self: center;
   margin: 20px 0 20px 0;
@@ -291,5 +291,4 @@ footer {
   border-top: rgb(125, 125, 128) solid 1px;
   text-align: center;
   color: rgb(125, 125, 128);
-  font-size: 1.5vw;
 }
