@@ -1,6 +1,18 @@
 @media screen and (max-width: 768px) {
   .project-container {
     flex-direction: column;
+    align-items: center;
+  }
+  .project-thumnail {
+    width: 200px;
+    height: 300px;
+  }
+  .project-thumnail p {
+    padding: 10px;
+    font-size: 0.8em;
+  }
+  .project-thumnail img {
+    height: 150px;
   }
   .project-item {
     margin-top: 20px;
@@ -9,7 +21,9 @@
     margin-top: 0;
   }
   .modal-content {
+    margin: 20% auto;
     width: 60%;
+    height: 300px;
   }
   footer {
     font-size: 10px;
@@ -20,6 +34,12 @@
   .project-container {
     flex-direction: row;
   }
+  .project-thumnail {
+    height: 500px;
+  }
+  .project-thumnail img {
+    height: 300px;
+  }
   .project-item {
     margin-right: 10px;
   }
@@ -27,7 +47,9 @@
     margin-right: 0;
   }
   .modal-content {
+    margin: 5% auto;
     width: 40%;
+    height: 700px;
   }
   footer {
     font-size: 15px;
