@@ -116,15 +116,15 @@
                 <span class="close">&times;</span>
                 <h2>WeddingBook</h2>
                 <br />
-                <p><a href="">Project Page</a></p>
-                <p><a href="">Project Repo</a></p>
+                <p><a href="javascript:void(0);" onclick="alertMessage();" return false;>Project Page</a></p>
+                <p><a href="https://github.com/ssongseulki/WeddingBook" target="_blank">Project Repo</a></p>
                 <ul>
                   <li>
                     <img alt="사진을 찾을 수 없습니다." src="IMG/WeddingBook.jpg" />
                   </li>
                   <li>
                     <p>Java / Javascript / JQuery / Html5 / Css3 / Mysql / MVC2 모델 등을 사용한 웹 사이트입니다.<br/>
-                    
+                       회원가입, 로그인, 게시판 글 작성/ 수정/ 삭제의 기능이 있습니다.
                     </p>
                   </li>
                 </ul>
@@ -185,7 +185,7 @@
                     /><br />
                     <h2>Youtube_clone</h2>
                     <br />
-                    <p>HTML / CSS를 사용한 Youtube 복제 웹 페이지 입니다.</p>
+                    <p>HTML / CSS / Javascript를 사용한 Youtube 복제 웹 페이지 입니다.</p>
                     <br />
                   </a>
                 </li>
@@ -204,7 +204,7 @@
                     src="IMG/Youtube_Clone.JPG" />
                   </li>
                   <li>
-                    <p>HTML5 / CSS3 를 사용한 Youtube Clone 페이지 입니다.<br>
+                    <p>HTML5 / CSS3 / Javascript 를 사용한 Youtube Clone 페이지 입니다.<br>
                        Media Query 를 사용하여 모바일과 PC 버전으로 확인 가능합니다.
                     </p>
                   </li>
@@ -280,79 +280,6 @@
       <p>Copyright 2020. SEUL-KI. All rights reserved.</p>
     </footer>
 
-    <script>
-      /* main-typing */
-      var typingBool = false;
-      var typingIdx = 0;
-      var liIndex = 0;
-      var liLength = $(".typing-txt>ul>li").length;
-
-      var typingTxt = $(".typing-txt>ul>li").eq(liIndex).text();
-      typingTxt = typingTxt.split("");
-      if (typingBool == false) {
-        typingBool = true;
-        var tyInt = setInterval(typing, 100);
-      }
-      function typing() {
-        $(".typing ul li").removeClass("on");
-        $(".typing ul li").eq(liIndex).addClass("on");
-        if (typingIdx < typingTxt.length) {
-          $(".typing ul li").eq(liIndex).append(typingTxt[typingIdx]);
-          typingIdx++;
-        } else {
-          if (liIndex < liLength - 1) {
-            liIndex++;
-            typingIdx = 0;
-            typingBool = false;
-            typingTxt = $(".typing-txt>ul>li").eq(liIndex).text();
-            clearInterval(tyInt);
-            setTimeout(function () {
-              tyInt = setInterval(typing, 100);
-            }, 1000);
-          } else if (liIndex == liLength - 1) {
-            clearInterval(tyInt);
-            setTimeout(function () {
-              typingBool = false;
-              liIndex = 0;
-              typingIdx = 0;
-              typingTxt = $(".typing-txt>ul>li").eq(liIndex).text();
-              $(".typing ul li").html("");
-              tyInt = setInterval(typing, 100);
-            }, 1000);
-          }
-        }
-      }
-
-      /* modal */
-      var modal = document.getElementsByClassName("modal");
-      var btn = document.getElementsByClassName("myBtn");
-      var span = document.getElementsByClassName("close");
-      var funcs = [];
-
-      function Modal(num) {
-        return function () {
-          btn[num].onclick = function () {
-            modal[num].style.display = "block";
-            console.log[num];
-          };
-
-          span[num].onclick = function () {
-            modal[num].style.display = "none";
-          };
-        };
-      }
-
-      for (var i = 0; i < btn.length; i++) {
-        funcs[i] = Modal(i);
-      }
-      for (var j = 0; j < btn.length; j++) {
-        funcs[j]();
-      }
-      window.onclick = function (event) {
-        if (event.target.className == "modal") {
-          event.target.style.display = "none";
-        }
-      };
-    </script>
+    <script src="Index.js"></script>
   </body>
 </html>
