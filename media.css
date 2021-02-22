@@ -48,6 +48,13 @@
   .project-item:last-child {
     margin-right: 0;
   }
+  .repoBtn {
+    border: 1px solid rgb(165, 163, 163);
+    padding: 5px;
+    margin: 5px;
+    border-radius: 5%;
+    color: #747171;
+  }
   .modal-content {
     margin: 5% auto;
     width: 40%;
