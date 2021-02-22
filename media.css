@@ -32,10 +32,12 @@
 
 @media screen and (min-width: 769px) {
   .project-container {
-    flex-direction: row;
+    flex-flow: wrap row;
   }
   .project-thumnail {
-    height: 500px;
+    height: 550px;
+    width: 350px;
+    margin-top: 20px;
   }
   .project-thumnail img {
     height: 300px;
